@@ -74,7 +74,7 @@ VALUES
     (1, NULL, 1, 2, 2, '2023-12-14 13:45:00', '2023-12-14 14:30:00', NULL, 'Citofono non funziona, chiamare numero', 'Via Dante 7, Torino'),
     (2, NULL, 2, 2, 1, '2023-12-15 19:30:00', '2023-12-15 20:15:00', NULL, NULL, 'Piazza Pitagora 3, Torino');
     
-INSERT INTO categorie_prodotto (nome)
+INSERT INTO categorie_prodotto (nome_categoria_prodotto)
 VALUES
     ('PIZZA'),
     ('PRIMO PIATTO'),

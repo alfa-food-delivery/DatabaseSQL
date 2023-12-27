@@ -60,7 +60,7 @@ CREATE TABLE categorie_food_provider (
 );
 
 # FOOD_PROVIDER
-CREATE TABLE food_provider (
+CREATE TABLE food_providers (
     id_food_provider INT PRIMARY KEY AUTO_INCREMENT,
     id_categoria_food_provider INT,
     id_profilo INT NOT NULL,
@@ -108,7 +108,7 @@ CREATE TABLE ordini (
 # CATEGORIE_PRODOTTO
 CREATE TABLE categorie_prodotto (
     id_categoria_prodotto INT PRIMARY KEY AUTO_INCREMENT,
-    nome VARCHAR(100) NOT NULL
+    nome_categoria_prodotto VARCHAR(100) NOT NULL
 );
 
 # PRODOTTI
@@ -117,7 +117,7 @@ CREATE TABLE prodotti (
     id_categoria_prodotto INT,
     nome VARCHAR(100) NOT NULL,
     descrizione VARCHAR(200),
-    prezzo DECIMAL(10, 2),
+    prezzo DECIMAL(10, 2) NOT NULL,
     FOREIGN KEY (id_categoria_prodotto) REFERENCES categorie_prodotto(id_categoria_prodotto)
 );
 
